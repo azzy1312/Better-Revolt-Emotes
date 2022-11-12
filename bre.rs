@@ -52,17 +52,11 @@ pub async fn message_process(details: Auth, message_in: RMessage) {
 
     let returner = match &content_vec[1] as &str {
 
-        "sad" | "sadness" => "https://autumn.revolt.chat/attachments/NIoYkEvZZbp3vU17CiPqdhkBNndsxfk7de1iiJim-G/sadness.jpg",
+        "sad" => "placeholder",
         _ => "placeholder",
     };
      send(details, message, format!("[]({returner})")).await
     };
-    
-
-
-    // "ver" | "version" => "**Version**\nReywen: `2`\nRevX: `2`\nBetter Revolt Emotes: `1.0`",
-
-    
 
 }
 
